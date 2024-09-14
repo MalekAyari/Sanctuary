@@ -64,12 +64,14 @@
     <Analyzer Include="D:\2022.3.34f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Tilemap\WFC\Generation\Cell.cs" />
     <Compile Include="Assets\Scripts\Tilemap\Walker\WalkerObject.cs" />
+    <Compile Include="Assets\Scripts\Tilemap\WFC\Generation\WaveGenerator.cs" />
     <Compile Include="Assets\Scripts\Tilemap\Walker\WalkerGenerator.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Tilemap\WFC\ScriptableObjects\Tile.cs" />
-    <Compile Include="Assets\Scripts\Tilemap\WFC\WaveGenerator.cs" />
-    <Compile Include="Assets\Scripts\Tilemap\WFC\Cell.cs" />
+    <Compile Include="Assets\Scripts\Tilemap\WFC\Rules\RulePopulator.cs" />
+    <Compile Include="Assets\Scripts\Tilemap\WFC\Rules\RuleGraph.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

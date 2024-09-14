@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a7392837d08b2b41be3288810f15014
+guid: 33b774b415de3df48acf02b39bed3a2d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -21,7 +21,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -48,9 +48,9 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water_Tile_Set_0
+      name: NW_Corner
       rect:
         serializedVersion: 2
         x: 0
@@ -150,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cd9b1e184d915840bfeb4e4d7259e07
-      internalID: 1918469184
+      spriteID: ab1ba82b89f5b87438fa89062ceb5610
+      internalID: 1095547823
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_1
+      name: N_Line
       rect:
         serializedVersion: 2
         x: 16
@@ -171,14 +171,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 279ce7c74f646fd48b1f3d37c9f54bce
-      internalID: -847573862
+      spriteID: 257df076016b51f44a460865e03151f2
+      internalID: 207153404130022853
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_2
+      name: NE_Corner
       rect:
         serializedVersion: 2
         x: 32
@@ -192,14 +192,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67029c251f80f8b418921481adf1c527
-      internalID: -26243328
+      spriteID: 5fe3a3e3c9e95ca4a9909b7183a5480e
+      internalID: -7602752770989158203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_3
+      name: NW_R_Corner
       rect:
         serializedVersion: 2
         x: 48
@@ -213,14 +213,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9541cf5890da40e4287c5952ce8d3e95
-      internalID: 154332266
+      spriteID: 610a51971087e1d409d82bf833937efa
+      internalID: 203873557990782979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_4
+      name: NE_R_Corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 112
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ca44c655c63834eaca63fadd9e188b
+      internalID: -3502602797078166740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: W_Line
       rect:
         serializedVersion: 2
         x: 0
@@ -234,14 +255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1984398bf5ad305488f6feee231a72b0
-      internalID: -1676040488
+      spriteID: f4d6bdd212c181a428458aafcb9e3481
+      internalID: -5967660628435739689
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_5
+      name: BaseTile
       rect:
         serializedVersion: 2
         x: 16
@@ -255,14 +276,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: caf240e749929f14abbae3a5723f2ca8
-      internalID: 633514541
+      spriteID: 62ae24a414d54c54580bb51e734a3cf8
+      internalID: -207790493752000317
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_6
+      name: E_Line
       rect:
         serializedVersion: 2
         x: 32
@@ -276,14 +297,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 634bc09718484504d899f850c413b8bf
-      internalID: -168674198
+      spriteID: f0836ae7df4d14c47b1b468523fe13c5
+      internalID: -5627313464953271986
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_7
+      name: SW_R_Corner
       rect:
         serializedVersion: 2
         x: 48
@@ -297,14 +318,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ded757350d72f0b4e838e64e86270ca7
-      internalID: 998858727
+      spriteID: cb4951e7e982c5c40b4c0bfbdf5c3c92
+      internalID: 1967448797687882973
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_8
+      name: SE_R_Corner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610e16da927357c46b568600c3fe86cf
+      internalID: -96083867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SW_Corner
       rect:
         serializedVersion: 2
         x: 0
@@ -318,14 +360,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 775e66a342ced6240a823b12852cafcf
-      internalID: 1654961215
+      spriteID: 57ebd4ca838b25945b01c6b884fcc175
+      internalID: 231214920551204524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_9
+      name: S_Line
       rect:
         serializedVersion: 2
         x: 16
@@ -339,14 +381,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 594d0352292f5854c874bd0e9d5e19a7
-      internalID: -658124298
+      spriteID: 077a0645559563146a508e1e18193936
+      internalID: 5091483978805606054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_10
+      name: SE_Corner
       rect:
         serializedVersion: 2
         x: 32
@@ -360,14 +402,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7dd2143853f00d42b6f854067678e01
-      internalID: -1452614129
+      spriteID: 76b556b3f4496094f891e52a2e87b205
+      internalID: 6679085117129134505
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_11
+      name: NW_R_ExtraCorner
       rect:
         serializedVersion: 2
         x: 48
@@ -381,14 +423,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dfd09ab6c24c388498d65332a6c4382b
-      internalID: 618169330
+      spriteID: b8f07b090520f0e468e1ee400c024d0d
+      internalID: -7486560714339248371
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_12
+      name: NE_R_ExtraCorner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cf837ae19e5d724cb28df9d3218dbf7
+      internalID: 8228566701116031769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: E_Peak
       rect:
         serializedVersion: 2
         x: 0
@@ -402,14 +465,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14ced401775c0a542a94a91983eff1f8
-      internalID: -158264152
+      spriteID: 80757891dec04704ebff0661f81764a0
+      internalID: 3439213508599088260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_13
+      name: W_Peak
       rect:
         serializedVersion: 2
         x: 16
@@ -423,14 +486,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 058703e97d2199b469ee9541a1dd1229
-      internalID: 189451571
+      spriteID: 6987d3faaf40b8d40aeecaddcda77ec9
+      internalID: -4493461107499342547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_14
+      name: Vertical
       rect:
         serializedVersion: 2
         x: 32
@@ -444,14 +507,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1126a874d82c76f48820b0c3a96c7d23
-      internalID: -1314252382
+      spriteID: 7bacaed1acda4304cabdcf9ab0b55661
+      internalID: 5775351990248684458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_15
+      name: SW_R_ExtraCorner
       rect:
         serializedVersion: 2
         x: 48
@@ -465,14 +528,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c28292953b511149bb2e1a0c1c6cbdd
-      internalID: 2093253710
+      spriteID: a85411e2fbe8855448f9f89a9f417bda
+      internalID: -5823266543503590562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_16
+      name: SE_R_ExtraCorner
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2917f8d2f98dda64cafe5bd81dc96ad7
+      internalID: -2488911156030323285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: N_Peak
       rect:
         serializedVersion: 2
         x: 0
@@ -486,14 +570,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c97bcb2505c51b44994d9014e5c6d35
-      internalID: 2065856068
+      spriteID: ba09bca255dcb774eaa5a34508995aff
+      internalID: 1925134857573781457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_17
+      name: S_Peak
       rect:
         serializedVersion: 2
         x: 16
@@ -507,14 +591,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ff306efb6287ef4b808cdc356986068
-      internalID: -600898124
+      spriteID: 99e9101b724757f4cb19cd194f1140fb
+      internalID: -9106020840324125632
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_18
+      name: Horizontal
       rect:
         serializedVersion: 2
         x: 32
@@ -528,14 +612,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b5c5c55034ce83438430dcad36d97c8
-      internalID: 512017394
+      spriteID: 2699ae13724b0ba47be5c0b2990688e7
+      internalID: -4135413764847285212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_19
+      name: SE_Peak
       rect:
         serializedVersion: 2
         x: 48
@@ -549,14 +633,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8eddb366931a9345ba05d077dc47201
-      internalID: -63271741
+      spriteID: 93235c05524f5e44f86beceb6310fa0a
+      internalID: 130746057273410635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_20
+      name: SW_Peak
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66ab78cd09442ce41a505c49a1e0d09f
+      internalID: 9142562521198179207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Diamond
       rect:
         serializedVersion: 2
         x: 0
@@ -570,14 +675,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e36881d526fe75d4bae84c4c275ef6ec
-      internalID: 1554371745
+      spriteID: 789f5ece7beee3a43a4a14fd2e50b118
+      internalID: 3283071777906387301
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_21
+      name: R_Diamond
       rect:
         serializedVersion: 2
         x: 16
@@ -591,17 +696,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5da634278cc4a9748816ff89fcd890c7
-      internalID: 378532902
+      spriteID: f8a844ff4f025714ba730f0a41108363
+      internalID: -4922220812695062595
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_22
+      name: NE_Peak
       rect:
         serializedVersion: 2
-        x: 32
+        x: 48
         y: 32
         width: 16
         height: 16
@@ -612,14 +717,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36ed0ce8123a3ef47a4ce3c8b32a8392
-      internalID: 1505955470
+      spriteID: 166fce49868c98c49a33d099b6eec3bf
+      internalID: -8582925682206963037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_23
+      name: NW_Peak
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6431fe2e66bf47542aaf3ce5d5baaad7
+      internalID: -1754610724787514445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SE_Diagonal
       rect:
         serializedVersion: 2
         x: 0
@@ -633,14 +759,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de1607250e9c48945b758843a7e13f4b
-      internalID: 124303002
+      spriteID: 412d9f8748dd8e94c9a2dab43eb772cb
+      internalID: 4727144274844889527
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_24
+      name: SW_Diagonal
       rect:
         serializedVersion: 2
         x: 16
@@ -654,14 +780,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35192374125581649972b12f8ff81c62
-      internalID: -1502995933
+      spriteID: deedc05c5e64b884bac9c0158da033a6
+      internalID: -1975840392752945011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_25
+      name: N_D_Corners
       rect:
         serializedVersion: 2
         x: 32
@@ -675,14 +801,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b5cde6f0c66b0f44aa2060c044a43e9
-      internalID: -1881802129
+      spriteID: 12fc15275e4f2164b885022fc51b95ff
+      internalID: -5482873764657566992
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_26
+      name: W_D_Corners
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69503f22ac4edff498ebed0a78961adc
+      internalID: -7842237257601519145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NE_Diagonal
       rect:
         serializedVersion: 2
         x: 0
@@ -696,14 +843,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d04c259096ccdc49803570843dcb914
-      internalID: -1290014978
+      spriteID: 261d447f1d8170c4abd1d6769ab132e5
+      internalID: -2108538189255472282
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_27
+      name: NW_Diagonal
       rect:
         serializedVersion: 2
         x: 16
@@ -717,14 +864,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2dfae21f913a694086df1f7fb8aa300
-      internalID: 244690084
+      spriteID: 0688811b07d47b94a80a1e83af93296f
+      internalID: -2572958968296493292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_28
+      name: E_D_Corners
       rect:
         serializedVersion: 2
         x: 32
@@ -738,14 +885,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 890a024bd6988394a8e22f196fb12072
-      internalID: -1669755287
+      spriteID: adef701c7e8ac2b43a05a774ca36ba8d
+      internalID: 598956607241788624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_Tile_Set_29
+      name: S_D_Corners
       rect:
         serializedVersion: 2
         x: 48
@@ -759,8 +906,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d80a3ba72f8c46a44847e00ea61f811e
-      internalID: -1524005323
+      spriteID: 39adc33fa2e825748aa25844d99478ef
+      internalID: 757434664425077771
       vertices: []
       indices: 
       edges: []
@@ -776,36 +923,42 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Water_Tile_Set_0: 1918469184
-      Water_Tile_Set_1: -847573862
-      Water_Tile_Set_10: -1452614129
-      Water_Tile_Set_11: 618169330
-      Water_Tile_Set_12: -158264152
-      Water_Tile_Set_13: 189451571
-      Water_Tile_Set_14: -1314252382
-      Water_Tile_Set_15: 2093253710
-      Water_Tile_Set_16: 2065856068
-      Water_Tile_Set_17: -600898124
-      Water_Tile_Set_18: 512017394
-      Water_Tile_Set_19: -63271741
-      Water_Tile_Set_2: -26243328
-      Water_Tile_Set_20: 1554371745
-      Water_Tile_Set_21: 378532902
-      Water_Tile_Set_22: 1505955470
-      Water_Tile_Set_23: 124303002
-      Water_Tile_Set_24: -1502995933
-      Water_Tile_Set_25: -1881802129
-      Water_Tile_Set_26: -1290014978
-      Water_Tile_Set_27: 244690084
-      Water_Tile_Set_28: -1669755287
-      Water_Tile_Set_29: -1524005323
-      Water_Tile_Set_3: 154332266
-      Water_Tile_Set_4: -1676040488
-      Water_Tile_Set_5: 633514541
-      Water_Tile_Set_6: -168674198
-      Water_Tile_Set_7: 998858727
-      Water_Tile_Set_8: 1654961215
-      Water_Tile_Set_9: -658124298
+      BaseTile: -207790493752000317
+      Diamond: 3283071777906387301
+      E_D_Corners: 598956607241788624
+      E_Line: -5627313464953271986
+      E_Peak: 3439213508599088260
+      Horizontal: -4135413764847285212
+      NE_Corner: -7602752770989158203
+      NE_Diagonal: -2108538189255472282
+      NE_Peak: -8582925682206963037
+      NE_R_Corner: -3502602797078166740
+      NE_R_ExtraCorner: 8228566701116031769
+      NW_Diagonal: -2572958968296493292
+      NW_Peak: -1754610724787514445
+      NW_R_Corner: 203873557990782979
+      NW_R_ExtraCorner: -7486560714339248371
+      N_D_Corners: -5482873764657566992
+      N_Line: 207153404130022853
+      N_Peak: 1925134857573781457
+      R_Diamond: -4922220812695062595
+      SECorner: 955582930867636424
+      SE_Corner: 6679085117129134505
+      SE_Diagonal: 4727144274844889527
+      SE_Peak: 130746057273410635
+      SE_R_ExtraCorner: -2488911156030323285
+      SW_Corner: 231214920551204524
+      SW_Diagonal: -1975840392752945011
+      SW_Peak: 9142562521198179207
+      SW_R_Corner: 1967448797687882973
+      SW_R_ExtraCorner: -5823266543503590562
+      S_D_Corners: 757434664425077771
+      S_Line: 5091483978805606054
+      S_Peak: -9106020840324125632
+      Vertical: 5775351990248684458
+      W_D_Corners: -7842237257601519145
+      W_Line: -5967660628435739689
+      W_Peak: -4493461107499342547
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

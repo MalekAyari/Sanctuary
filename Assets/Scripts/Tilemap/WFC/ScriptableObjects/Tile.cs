@@ -5,17 +5,40 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Tile", menuName = "Tile", order = 0)]
 public class Tile : ScriptableObject {
     
+    public enum TileMaterial{
+        Grass,
+        Water,
+    }
+
     public Sprite sprite;
+    public TileMaterial material;
+    public TileType type;
+    public int generationWeight = 1;
+    public bool walkable = true;
+    public bool isDestructible = true;
+    public int durability;
 
-    public List<Sprite> north = new List<Sprite>();
-    public List<Sprite> northEast = new List<Sprite>();
-    public List<Sprite> east = new List<Sprite>();
-    public List<Sprite> southEast = new List<Sprite>();
-    public List<Sprite> south = new List<Sprite>();
-    public List<Sprite> southWest = new List<Sprite>();
-    public List<Sprite> west = new List<Sprite>();
-    public List<Sprite> northWest = new List<Sprite>();
+    public List<TileType> north = new List<TileType>();
+    public List<TileType> east = new List<TileType>();
+    public List<TileType> south = new List<TileType>();
+    public List<TileType> west = new List<TileType>();
 
+    public List<TileType> GetValidTiles(Direction d){
+        switch (d){
+            case Direction.North:
+                return north;
+            case Direction.East:
+                return east;
+            case Direction.South:
+                return south;
+            case Direction.West:
+                return west;
+            default:
+                return new List<TileType>();
+        }
+
+
+    }
 
 }
 
