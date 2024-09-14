@@ -69,9 +69,9 @@
     <Compile Include="Assets\Scripts\Tilemap\WFC\Generation\WaveGenerator.cs" />
     <Compile Include="Assets\Scripts\Tilemap\Walker\WalkerGenerator.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Tilemap\WFC\ScriptableObjects\Tile.cs" />
     <Compile Include="Assets\Scripts\Tilemap\WFC\Rules\RulePopulator.cs" />
     <Compile Include="Assets\Scripts\Tilemap\WFC\Rules\RuleGraph.cs" />
+    <Compile Include="Assets\Scripts\Tilemap\WFC\ScriptableObjects\WFCNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

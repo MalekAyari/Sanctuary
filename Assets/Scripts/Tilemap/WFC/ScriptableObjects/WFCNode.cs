@@ -13,6 +13,7 @@ public class Tile : ScriptableObject {
     public Sprite sprite;
     public TileMaterial material;
     public TileType type;
+    public bool usable = false;
     public int generationWeight = 1;
     public bool walkable = true;
     public bool isDestructible = true;

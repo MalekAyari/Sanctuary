@@ -15,7 +15,7 @@ D:/Unity/projects/Sanctuary
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-59702
+64732
 Successfully changed project path to: D:/Unity/projects/Sanctuary
 D:/Unity/projects/Sanctuary
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ D:/Unity/projects/Sanctuary
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [29316] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 2377391355 [EditorId] 2377391355 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-B3VJU5F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25104] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 1660242923 [EditorId] 1660242923 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-B3VJU5F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [29316] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 2377391355 [EditorId] 2377391355 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-B3VJU5F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25104] Host "[IP] 192.168.1.9 [Port] 0 [Flags] 2 [Guid] 1660242923 [EditorId] 1660242923 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-B3VJU5F) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 13.04 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 9.89 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.34f1 (4886f5360533)
 [Subsystems] Discovering subsystems at path D:/2022.3.34f1/Editor/Data/Resources/UnitySubsystems
@@ -70,53 +70,53 @@ Initialize mono
 Mono path[0] = 'D:/2022.3.34f1/Editor/Data/Managed'
 Mono path[1] = 'D:/2022.3.34f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/2022.3.34f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56848
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56016
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/2022.3.34f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/2022.3.34f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: D:/2022.3.34f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: D:/2022.3.34f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004818 seconds.
-- Loaded All Assemblies, in  0.405 seconds
+Registered in 0.005248 seconds.
+- Loaded All Assemblies, in  0.423 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 252 ms
+Android Extension - Scanning For ADB Devices 311 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.636 seconds
-Domain Reload Profiling: 1041ms
+- Finished resetting the current domain, in  0.726 seconds
+Domain Reload Profiling: 1149ms
 	BeginReloadAssembly (144ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (159ms)
-		LoadAssemblies (143ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (55ms)
+	LoadAllAssembliesAndSetupDomain (165ms)
+		LoadAssemblies (144ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (156ms)
-			TypeCache.Refresh (154ms)
-				TypeCache.ScanAssembly (140ms)
+		AnalyzeDomain (162ms)
+			TypeCache.Refresh (161ms)
+				TypeCache.ScanAssembly (146ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (636ms)
+	FinalizeReload (726ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (570ms)
+		SetupLoadedEditorAssemblies (658ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (373ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (449ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (132ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
+			ProcessInitializeOnLoadAttributes (146ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -124,8 +124,8 @@ Domain Reload Profiling: 1041ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.653 seconds
-Refreshing native plugins compatible for Editor in 3.57 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.802 seconds
+Refreshing native plugins compatible for Editor in 3.09 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
@@ -135,47 +135,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.718 seconds
-Domain Reload Profiling: 1370ms
-	BeginReloadAssembly (152ms)
+- Finished resetting the current domain, in  0.776 seconds
+Domain Reload Profiling: 1578ms
+	BeginReloadAssembly (184ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (39ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (39ms)
-	LoadAllAssembliesAndSetupDomain (410ms)
-		LoadAssemblies (303ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (45ms)
+	LoadAllAssembliesAndSetupDomain (505ms)
+		LoadAssemblies (373ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (197ms)
-			TypeCache.Refresh (167ms)
-				TypeCache.ScanAssembly (148ms)
-			ScanForSourceGeneratedMonoScriptInfo (22ms)
+		AnalyzeDomain (245ms)
+			TypeCache.Refresh (209ms)
+				TypeCache.ScanAssembly (183ms)
+			ScanForSourceGeneratedMonoScriptInfo (28ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (718ms)
+	FinalizeReload (777ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (550ms)
+		SetupLoadedEditorAssemblies (582ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (6ms)
+			InitializePlatformSupportModulesInManaged (39ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (65ms)
-			ProcessInitializeOnLoadAttributes (402ms)
-			ProcessInitializeOnLoadMethodAttributes (44ms)
-			AfterProcessingInitializeOnLoad (2ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (419ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 3.81 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 3.27 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4055 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 71 unused Assets / (246.3 KB). Loaded Objects now: 4512.
+Unloading 4054 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 71 unused Assets / (245.9 KB). Loaded Objects now: 4511.
 Memory consumption went from 147.5 MB to 147.2 MB.
-Total: 3.992700 ms (FindLiveObjects: 0.318600 ms CreateObjectMapping: 0.289000 ms MarkObjects: 3.144800 ms  DeleteObjects: 0.239000 ms)
+Total: 5.662900 ms (FindLiveObjects: 0.379600 ms CreateObjectMapping: 0.347900 ms MarkObjects: 4.609700 ms  DeleteObjects: 0.324100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -192,261 +192,101 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 187129.445638 seconds.
-  path: Assets/Sprites/Sprite Sheets/Tileset_Template.png
-  artifactKey: Guid(33b774b415de3df48acf02b39bed3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Sprite Sheets/Tileset_Template.png using Guid(33b774b415de3df48acf02b39bed3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '8266739a73d17440017f5f262f2f5d66') in 0.114245 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 39
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.471 seconds
-Refreshing native plugins compatible for Editor in 4.61 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.945 seconds
-Domain Reload Profiling: 1415ms
-	BeginReloadAssembly (180ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (11ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (45ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (215ms)
-		LoadAssemblies (282ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (27ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (11ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (945ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (488ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (35ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (58ms)
-			ProcessInitializeOnLoadAttributes (359ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (13ms)
-Refreshing native plugins compatible for Editor in 4.37 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4048 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 43 unused Assets / (218.4 KB). Loaded Objects now: 4523.
-Memory consumption went from 145.2 MB to 145.0 MB.
-Total: 3.434900 ms (FindLiveObjects: 0.314400 ms CreateObjectMapping: 0.240300 ms MarkObjects: 2.704000 ms  DeleteObjects: 0.175400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 167.222729 seconds.
-  path: Assets/Sprites/Sprite Sheets/Tileset_Template.png
-  artifactKey: Guid(33b774b415de3df48acf02b39bed3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/Sprite Sheets/Tileset_Template.png using Guid(33b774b415de3df48acf02b39bed3a2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'b2011a0209c0506a848893f9a2ccfd07') in 0.106393 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 39
-========================================================================
-Received Import Request.
-  Time since last request: 9.185501 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/BaseTile.asset
-  artifactKey: Guid(df832862c4ed5c04e8f618acb8ed10f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/BaseTile.asset using Guid(df832862c4ed5c04e8f618acb8ed10f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'da9bc0af8710f46776510cff2a6624b7') in 0.002218 seconds
+  Time since last request: 206772.080165 seconds.
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/SW_Peak.asset
+  artifactKey: Guid(1cf4420a2d193b64ea2e3029cc9f954d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/SW_Peak.asset using Guid(1cf4420a2d193b64ea2e3029cc9f954d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5275392e0bee75d90a6d8be01302dbbf') in 0.015280 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002591 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/E_Line.asset
-  artifactKey: Guid(6005b1b1eede10a4ca8026189c6afb70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/E_Line.asset using Guid(6005b1b1eede10a4ca8026189c6afb70) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'bad489b23c24d76b664a637bb85e7822') in 0.001415 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/E_D_Corners.asset
-  artifactKey: Guid(6143be33dd4b1aa44be0f1cffa7d0724) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/E_D_Corners.asset using Guid(6143be33dd4b1aa44be0f1cffa7d0724) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'ad19ad72163195ba5b1a893900362fc8') in 0.001167 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NE_Corner.asset
-  artifactKey: Guid(44ad0c349de45d34d87dd2083fcb4d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NE_Corner.asset using Guid(44ad0c349de45d34d87dd2083fcb4d43) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '940cb8cff437b5a3f720c9cc7c1a0269') in 0.001188 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NE_Peak.asset
-  artifactKey: Guid(267cb8f72f344c84da3566039d5f6ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NE_Peak.asset using Guid(267cb8f72f344c84da3566039d5f6ac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'e56bd67ccccfb8a82db13849a09d7812') in 0.001122 seconds
+  Time since last request: 0.000028 seconds.
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/NE_R_ExtraCorner.asset
+  artifactKey: Guid(272801f526b8a5849ba737725840a87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/NE_R_ExtraCorner.asset using Guid(272801f526b8a5849ba737725840a87f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0e7a4ee818c6cb247eaa48fc67cee7d8') in 0.001191 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000016 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SE_Peak.asset
-  artifactKey: Guid(a55565e24f9e26f40961b4de8008d45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SE_Peak.asset using Guid(a55565e24f9e26f40961b4de8008d45c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '07e24d3e65a9a5b3faa69a30bb4c8be5') in 0.001067 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SE_R_Corner.asset
-  artifactKey: Guid(6e58c5a166ecf94478e54dc7f6a572c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SE_R_Corner.asset using Guid(6e58c5a166ecf94478e54dc7f6a572c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '409038baab0d3ca571edf9604b4e9d8c') in 0.001139 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NW_Diagonal.asset
-  artifactKey: Guid(55d55a72d587b6649a8b3483f1bffc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NW_Diagonal.asset using Guid(55d55a72d587b6649a8b3483f1bffc19) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '16297cbc3daedc40a449e1d6cd4c06fc') in 0.001457 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/W_D_Corners.asset
-  artifactKey: Guid(7798254ef7f88ea4f9a6f4231e0c2566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/W_D_Corners.asset using Guid(7798254ef7f88ea4f9a6f4231e0c2566) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '7adb4eabd663267733ea5d4a65fefd30') in 0.001328 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SW_Peak.asset
-  artifactKey: Guid(b0e1f02c5c0be9b4981ba5ade114fa27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SW_Peak.asset using Guid(b0e1f02c5c0be9b4981ba5ade114fa27) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '038505387c888bfcd081f89a76f13ddf') in 0.001395 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NW_Peak.asset
-  artifactKey: Guid(c886162d17611a144b163178a4cc802a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NW_Peak.asset using Guid(c886162d17611a144b163178a4cc802a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '7ba634da0f77dd172963aaef0445493b') in 0.001204 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SW_Diagonal.asset
-  artifactKey: Guid(6ed1c987751aec340a08f851e46fbcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SW_Diagonal.asset using Guid(6ed1c987751aec340a08f851e46fbcd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '7aa0af2fd1b6a51966591229c448b6b2') in 0.000904 seconds
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/R_Diamond.asset
+  artifactKey: Guid(ef292296e893abd49883c8292cbbe8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/R_Diamond.asset using Guid(ef292296e893abd49883c8292cbbe8c9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '78d7d73eaa301bd7d4b9566f80570f64') in 0.001048 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000016 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/S_Peak.asset
-  artifactKey: Guid(42e17cf7a01290f4a9bb29c404639db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/S_Peak.asset using Guid(42e17cf7a01290f4a9bb29c404639db3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'd7d8444ab7940b89cbf4346b4a9171ac') in 0.001016 seconds
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/Vertical.asset
+  artifactKey: Guid(d87b91335a5213d49a8f37963a89df9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/Vertical.asset using Guid(d87b91335a5213d49a8f37963a89df9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1ebd70d79376dfcd3a66e7bb87726f5f') in 0.001445 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/N_D_Corners.asset
-  artifactKey: Guid(af50503fce80c1547b0e664db51a9f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/N_D_Corners.asset using Guid(af50503fce80c1547b0e664db51a9f6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '20a18400e33c6996a9b3316f3a5ea03e') in 0.000919 seconds
+  Time since last request: 0.000039 seconds.
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/NW_Peak.asset
+  artifactKey: Guid(47b1312900df4fd41a11228d51cad6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/NW_Peak.asset using Guid(47b1312900df4fd41a11228d51cad6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5181d172398d2ad6577f71e8face9d70') in 0.001613 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NW_R_Corner.asset
-  artifactKey: Guid(90d737a2d9180ee4392af52fe19bb732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/NW_R_Corner.asset using Guid(90d737a2d9180ee4392af52fe19bb732) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'cb6f5e68c062f2fe2f5d4640a1843d6b') in 0.000860 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/NW_Diagonal.asset
+  artifactKey: Guid(0fe5e4d6de480054c8ed4e51b773bbae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/NW_Diagonal.asset using Guid(0fe5e4d6de480054c8ed4e51b773bbae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1846823bcb3fe0d10581c94dcddb19fe') in 0.001089 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SE_R_ExtraCorner.asset
-  artifactKey: Guid(d74a72b9bd8f92942bceea5a39de65ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SE_R_ExtraCorner.asset using Guid(d74a72b9bd8f92942bceea5a39de65ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'd7c176d155e65372d480a4fca08b8868') in 0.000935 seconds
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/S_D_Corners.asset
+  artifactKey: Guid(29a310276cba1eb4db957dee1d39aa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/S_D_Corners.asset using Guid(29a310276cba1eb4db957dee1d39aa7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '1a14b19f5f0ecec7677870c231943268') in 0.001610 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/W_Line.asset
-  artifactKey: Guid(6e3a587d84cc2d849956e1bb0b0de3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/W_Line.asset using Guid(6e3a587d84cc2d849956e1bb0b0de3ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '3671f7c3847cd14277673198124e9c0d') in 0.001112 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/E_Line.asset
+  artifactKey: Guid(e1188c0a4eb36d04b9b1087cdf6c5f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/E_Line.asset using Guid(e1188c0a4eb36d04b9b1087cdf6c5f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7f76c6595498c129dd78e3e9d7379848') in 0.007314 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
   Time since last request: 0.000015 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SW_Corner.asset
-  artifactKey: Guid(cf4b0809d4cefec408f1cb04a23886ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/SW_Corner.asset using Guid(cf4b0809d4cefec408f1cb04a23886ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '992684fea3ddb248ea9d23573aadf251') in 0.001160 seconds
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/Horizontal.asset
+  artifactKey: Guid(a541cf8f3e3473d45b03a650e309f555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/Horizontal.asset using Guid(a541cf8f3e3473d45b03a650e309f555) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'de78005ae2af08a19b9734a05326ef8c') in 0.001091 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/E_Peak.asset
-  artifactKey: Guid(64ec04266f8932f4590b6f8358a6e0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/E_Peak.asset using Guid(64ec04266f8932f4590b6f8358a6e0c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'b7da5406d567938a4a0716391fd14865') in 0.001702 seconds
+  Time since last request: 0.000013 seconds.
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/NW_Corner.asset
+  artifactKey: Guid(22fd06ff53fe4ea4bb930c057ada9c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/NW_Corner.asset using Guid(22fd06ff53fe4ea4bb930c057ada9c08) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '4f0e4866e0ae7d4334c6da2e60609f17') in 0.000850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/Diamond.asset
+  artifactKey: Guid(64d11559a32b6da4882446f5784f6170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Tilemap/WFC/ScriptableObjects/Tiles/Grass/Diamond.asset using Guid(64d11559a32b6da4882446f5784f6170) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'bd202abb73811ce38119181b26e3a86a') in 0.001154 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
