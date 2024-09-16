@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da0d3ad35eca5648b6bdb63f331f786, type: 3}
   m_Name: SW_Corner
   m_EditorClassIdentifier: 
-  sprite: {fileID: -207790493752000317, guid: 33b774b415de3df48acf02b39bed3a2d, type: 3}
+  tile: {fileID: 0}
   material: 0
   type: 2
-  usable: 1
+  usable: 0
   generationWeight: 1
   walkable: 1
   isDestructible: 1
   durability: 0
-  north: 010000000000000008000000
-  east: 0b0000001200000008000000
-  south: 000000000900000010000000
-  west: 120000000100000007000000
+  north: []
+  east: []
+  south: []
+  west: []

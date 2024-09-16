@@ -1,12 +1,6 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Data;
-using System.IO;
-using System.Security;
 using UnityEditor;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public enum Direction{
     North,
@@ -59,6 +53,7 @@ public enum TileType{
 
 public class RulePopulator
 {
+    public Dictionary<TileType, List<Rule>> RuleSet = new Dictionary<TileType, List<Rule>>();
 
     public class Rule
     {
@@ -70,10 +65,6 @@ public class RulePopulator
             this.type = type;
         }
     }
-    
-    private string folderPath;
-    private Dictionary<TileType, List<Rule>> RuleSet = new Dictionary<TileType, List<Rule>>();
-    
     public RulePopulator(){
         RuleSet[TileType.S_Line] = new List<Rule>{
             new Rule(Direction.South, TileType.NW_Corner),
@@ -249,7 +240,7 @@ public class RulePopulator
             
             new Rule(Direction.West, TileType.NW_Corner),
             new Rule(Direction.West, TileType.N_Line),
-            new Rule(Direction.West, TileType.NE_Diagonal),
+            new Rule(Direction.West, TileType.SW_Diagonal),
 
             new Rule(Direction.East, TileType.SW_Corner),
             new Rule(Direction.East, TileType.SE_Diagonal),
@@ -315,26 +306,51 @@ public class RulePopulator
         };
     }
 
-    public void SetValidNeighbors(Tile tile){
+    public static WFCNode GetTileByType(TileType type){
+        string [] guids = AssetDatabase.FindAssets("t:WFCNode");
+        
+        foreach (string guid in guids){
+
+            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+            WFCNode tile = AssetDatabase.LoadAssetAtPath<WFCNode>(assetPath);
+
+            if (tile != null && tile.type == type)
+            {
+                return tile;
+            } else if (tile == null) {
+                return null;
+            }
+        }
+
+        return null;
+    }
+
+    public void SetValidNeighbors(WFCNode tile){
     
         if (!RuleSet.ContainsKey(tile.type)){
-            Debug.LogError($"RuleSet does not contain any rules for tile type {tile.type}");
+            Debug.Log($"RuleSet does not contain any rules for tile type {tile.type}");
             return;
         }
 
         foreach (Rule rule in RuleSet[tile.type]){
+            WFCNode neighborTile = GetTileByType(rule.type);
+            if (neighborTile == null) continue;
             switch (rule.direction){
                 case Direction.North:
-                    tile.north.Add(rule.type);
+                    if (!tile.north.Contains(GetTileByType(rule.type)))
+                        tile.north.Add(GetTileByType(rule.type));
                     break;
                 case Direction.South:
-                    tile.south.Add(rule.type);
+                    if (!tile.south.Contains(GetTileByType(rule.type)))
+                        tile.south.Add(GetTileByType(rule.type));
                     break;
                 case Direction.East:
-                    tile.east.Add(rule.type);
+                    if (!tile.east.Contains(GetTileByType(rule.type)))
+                        tile.east.Add(GetTileByType(rule.type));
                     break;
                 case Direction.West:
-                    tile.west.Add(rule.type);
+                    if (!tile.west.Contains(GetTileByType(rule.type)))
+                        tile.west.Add(GetTileByType(rule.type));
                     break;
             }
         }

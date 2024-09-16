@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
-[CreateAssetMenu(fileName = "Tile", menuName = "Tile", order = 0)]
-public class Tile : ScriptableObject {
+[CreateAssetMenu(fileName = "WFCNode", menuName = "WFCNode", order = 0)]
+public class WFCNode : ScriptableObject {
     
     public enum TileMaterial{
         Grass,
         Water,
     }
 
-    public Sprite sprite;
+    public Tile tile;
     public TileMaterial material;
     public TileType type;
     public bool usable = false;
@@ -19,12 +20,12 @@ public class Tile : ScriptableObject {
     public bool isDestructible = true;
     public int durability;
 
-    public List<TileType> north = new List<TileType>();
-    public List<TileType> east = new List<TileType>();
-    public List<TileType> south = new List<TileType>();
-    public List<TileType> west = new List<TileType>();
+    public List<WFCNode> north = new List<WFCNode>();
+    public List<WFCNode> east = new List<WFCNode>();
+    public List<WFCNode> south = new List<WFCNode>();
+    public List<WFCNode> west = new List<WFCNode>();
 
-    public List<TileType> GetValidTiles(Direction d){
+    public List<WFCNode> GetValidTiles(Direction d){
         switch (d){
             case Direction.North:
                 return north;
@@ -35,7 +36,7 @@ public class Tile : ScriptableObject {
             case Direction.West:
                 return west;
             default:
-                return new List<TileType>();
+                return new List<WFCNode>();
         }
 
 

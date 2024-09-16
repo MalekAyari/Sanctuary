@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8da0d3ad35eca5648b6bdb63f331f786, type: 3}
   m_Name: NE_R_ExtraCorner
   m_EditorClassIdentifier: 
-  sprite: {fileID: -207790493752000317, guid: 33b774b415de3df48acf02b39bed3a2d, type: 3}
+  tile: {fileID: 0}
   material: 0
   type: 33
   usable: 0
@@ -20,7 +20,7 @@ MonoBehaviour:
   walkable: 1
   isDestructible: 1
   durability: 0
-  north: 
-  east: 
-  south: 
-  west: 
+  north: []
+  east: []
+  south: []
+  west: []

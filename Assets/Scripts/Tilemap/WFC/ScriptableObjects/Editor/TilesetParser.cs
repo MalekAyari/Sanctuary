@@ -3,21 +3,24 @@ using UnityEditor;
 using UnityEditor.U2D.Sprites;
 using System.IO;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine.Tilemaps;
 
-public class TileCreator : EditorWindow
+public class TilesetParser : EditorWindow
 {
     private Texture2D tileset;
-    private int pixelsPerUnit = 32; // Default pixels per unit for the sprites
+    private int pixelsPerUnit = 16; // Default pixels per unit for the sprites
     private int tileHeight = 16; // Default tile height
     private int tileWidth = 16; // Default tile width
     private int padding = 0; // Optional padding between tiles
-    private Tile.TileMaterial material;
+    private WFCNode.TileMaterial material;
     private string folderPath = "...";
 
     [MenuItem("Tools/Tileset Slicer")]
     public static void ShowWindow()
     {
-        GetWindow<TileCreator>("Tileset Slicer");
+        GetWindow<TilesetParser>("Tileset Slicer");
     }
 
     private void OnGUI()
@@ -32,7 +35,7 @@ public class TileCreator : EditorWindow
         tileWidth = EditorGUILayout.IntField("Tile Width: ", tileWidth);
         tileHeight = EditorGUILayout.IntField("Tile Height: ", tileHeight);
         padding = EditorGUILayout.IntField("Padding: ", padding);
-        material = (Tile.TileMaterial)EditorGUILayout.EnumPopup("Tileset material:", material);
+        material = (WFCNode.TileMaterial)EditorGUILayout.EnumPopup("Tileset material:", material);
         
         // Object Path
         GUILayout.Label("Save Directory", EditorStyles.boldLabel);
@@ -290,40 +293,89 @@ public class TileCreator : EditorWindow
         return result;
     }
 
-    public void GenerateTiles(SpriteRect[] spriteRects)
-{
-    foreach (var rect in spriteRects)
-    {
-        string path = Path.Combine(folderPath, $"{rect.name}.asset");
+    public Sprite GetSpriteByName(Sprite[] sprites, string name){
 
-        if (string.IsNullOrEmpty(folderPath) || !Directory.Exists(folderPath))
-        {
-            EditorUtility.DisplayDialog("Error", "Invalid folder path!", "OK");
-            return;
+        foreach (Sprite sprite in sprites){
+            if (sprite.name == name) {
+                return sprite;
+            }
         }
 
-        path = "Assets" + path.Substring(Application.dataPath.Length).Replace('\\', '/');
-
-        if (AssetDatabase.LoadAssetAtPath<Tile>(path) != null)
-        {
-            AssetDatabase.DeleteAsset(path); 
-        }
-
-        RulePopulator populator = new RulePopulator();
-        Tile tile = CreateInstance<Tile>();
-
-        tile.sprite = AssetDatabase.LoadAssetAtPath<Sprite>(AssetDatabase.GetAssetPath(tileset));
-        
-        if (Enum.TryParse<TileType>(rect.name, out TileType type)){
-            tile.type = type;
-        } else {
-            Debug.LogError("Tile type not found: " + rect.name);
-        }
-
-        populator.SetValidNeighbors(tile);
-
-        AssetDatabase.CreateAsset(tile, path);
-        AssetDatabase.SaveAssets();
+        return null;
     }
-}
+
+    public Tile GenerateTile(Sprite[] sprites, string name){
+        Tile newTile = ScriptableObject.CreateInstance<Tile>();
+        newTile.sprite = GetSpriteByName(sprites, name);
+        AssetDatabase.CreateAsset(newTile, "Assets\\Scripts\\Tilemap\\WFC\\ScriptableObjects\\Props\\" + name + ".asset");
+        
+        return newTile;
+    }
+
+    public void SetAllTileRules(string folderPath, Sprite[] sprites){
+        string path = "Assets" + folderPath.Substring(Application.dataPath.Length).Replace('\\', '/');
+
+        string[] assetGUIDs = AssetDatabase.FindAssets("t:WFCNode", new[] {path});
+        
+        foreach (string guid in assetGUIDs){
+            string assetPath = AssetDatabase.GUIDToAssetPath(guid);
+            WFCNode tile = AssetDatabase.LoadAssetAtPath<WFCNode>(assetPath);
+
+            if (tile != null ){
+                RulePopulator populator = new RulePopulator();
+
+                tile.tile = GenerateTile(sprites, tile.name);
+
+                if (populator.RuleSet.ContainsKey(tile.type)){
+                    populator.SetValidNeighbors(tile);
+                }
+            } else {
+                Debug.Log("An error has occurred while setting the rules of the tiles!");
+            }
+        }
+    }
+
+    public void GenerateTiles(SpriteRect[] spriteRects)
+    {
+        int i = 0;
+        foreach (var rect in spriteRects)
+        {
+            string path = Path.Combine(folderPath, $"{rect.name}.asset");
+
+            if (string.IsNullOrEmpty(folderPath) || !Directory.Exists(folderPath))
+            {
+                EditorUtility.DisplayDialog("Error", "Invalid folder path!", "OK");
+                return;
+            }
+
+            path = "Assets" + path.Substring(Application.dataPath.Length).Replace('\\', '/');
+
+            WFCNode tile = AssetDatabase.LoadAssetAtPath<WFCNode>(path);
+            if (tile == null)
+            {
+                tile = CreateInstance<WFCNode>();
+
+                
+                if (Enum.TryParse<TileType>(rect.name, out TileType type)){
+                    tile.type = type;
+                } else {
+                    Debug.LogError("Tile type not found: " + rect.name);
+                }
+
+                AssetDatabase.CreateAsset(tile, path);
+            } else {
+                if (Enum.TryParse<TileType>(rect.name, out TileType type)){
+                    tile.type = type;
+                } else {
+                    Debug.LogError("Tile type not found: " + rect.name);
+                }
+            }
+
+            Sprite[] sprites = AssetDatabase.LoadAllAssetsAtPath(AssetDatabase.GetAssetPath(tileset)).OfType<Sprite>().ToArray();
+
+            SetAllTileRules(folderPath, sprites);
+            AssetDatabase.SaveAssets();
+            i++;
+        }
+    }
 }
