@@ -129,7 +129,6 @@ public class TilesetParser : EditorWindow
         
         // Reimport to ensure changes are applied
         AssetDatabase.ImportAsset(path, ImportAssetOptions.ForceUpdate);
-        AssetDatabase.Refresh();
 
 
         EditorUtility.DisplayDialog("Success!", "Successfully sliced sprite!", "OK");
@@ -306,9 +305,11 @@ public class TilesetParser : EditorWindow
 
     public Tile GenerateTile(Sprite[] sprites, string name){
         Tile newTile = ScriptableObject.CreateInstance<Tile>();
+
         newTile.sprite = GetSpriteByName(sprites, name);
         AssetDatabase.CreateAsset(newTile, "Assets\\Scripts\\Tilemap\\WFC\\ScriptableObjects\\Props\\" + name + ".asset");
-        
+        AssetDatabase.SaveAssets();
+
         return newTile;
     }
 

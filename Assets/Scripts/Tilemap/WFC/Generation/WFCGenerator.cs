@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using Unity.Collections;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -7,6 +9,7 @@ using UnityEngine.Tilemaps;
 public class WFCGenerator : MonoBehaviour
 {
     
+    [SerializeField] private Tile propagatingTile;
     [SerializeField] private Tilemap map;
     [SerializeField] private Vector2Int size = new Vector2Int(16,16);
     [SerializeField] private float delay = 0.2f;
@@ -77,15 +80,20 @@ public class WFCGenerator : MonoBehaviour
                 yield return new WaitForSeconds(delay);
 
                 Vector2Int cellToCollapsePos = Observe(cellsToCollapse);
+                if (grid[cellToCollapsePos.x, cellToCollapsePos.y].potentialNodes.Count != 0){
+                    grid[cellToCollapsePos.x, cellToCollapsePos.y].Collapse();
 
-                grid[cellToCollapsePos.x, cellToCollapsePos.y].Collapse();
+                    cellsToCollapse.Remove(grid[cellToCollapsePos.x, cellToCollapsePos.y]);
 
-                cellsToCollapse.Remove(grid[cellToCollapsePos.x, cellToCollapsePos.y]);
-
-                Debug.Log("Setting tile: ["+ cellToCollapsePos.x + ", " + cellToCollapsePos.y + "] to: "  + grid[cellToCollapsePos.x, cellToCollapsePos.y].tile.name);
-                map.SetTile(new Vector3Int(cellToCollapsePos.x, cellToCollapsePos.y, 0), grid[cellToCollapsePos.x, cellToCollapsePos.y].tile.tile);
-                
-                Propagate(cellToCollapsePos, grid);
+                    Debug.Log("Setting tile: ["+ cellToCollapsePos.x + ", " + cellToCollapsePos.y + "] to: "  + grid[cellToCollapsePos.x, cellToCollapsePos.y].tile.name);
+                    
+                    map.SetTile(new Vector3Int(cellToCollapsePos.x, cellToCollapsePos.y, 0), grid[cellToCollapsePos.x, cellToCollapsePos.y].tile.tile);
+                    
+                    Propagate(cellToCollapsePos, grid);
+                } else {
+                    map.SetTile(new Vector3Int(cellToCollapsePos.x, cellToCollapsePos.y, 0), propagatingTile);
+                    Time.timeScale = 0f;
+                }
             }
         }
     }
@@ -127,7 +135,10 @@ public class WFCGenerator : MonoBehaviour
                     case 2: KeepValidNodes(grid[position.x, position.y].tile.east, neighborCell.potentialNodes); break;
                     case 3: KeepValidNodes(grid[position.x, position.y].tile.west, neighborCell.potentialNodes); break;
                 }
-                Debug.Log($"<color=white>Propagated to cell at {neighborPos}. </color>");
+
+                //neighborCell.history.Add(neighborCell.position, grid[position.x, position.y].potentialNodes);
+
+                Debug.Log($"<color=white> Propagated to cell at {neighborPos}. </color>");
             }
         }
     }

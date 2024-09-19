@@ -168,7 +168,7 @@ public class RulePopulator
         RuleSet[TileType.NW_Corner] = new List<Rule>{
             new Rule(Direction.North, TileType.SE_Corner),
             new Rule(Direction.North, TileType.S_Line),
-            new Rule(Direction.North, TileType.NE_Corner),
+            new Rule(Direction.North, TileType.SW_Corner),
             new Rule(Direction.North, TileType.Void),
             
             new Rule(Direction.East, TileType.N_Line),
