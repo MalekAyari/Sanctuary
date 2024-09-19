@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tile: {fileID: 0}
   material: 0
-  type: 28
+  type: 29
   usable: 0
   generationWeight: 1
   walkable: 1

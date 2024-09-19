@@ -10,6 +10,7 @@ public enum Direction{
 }
 
 public enum TileType{   
+    Void,
     NW_Corner,
     W_Line,
     SW_Corner,
@@ -65,11 +66,13 @@ public class RulePopulator
             this.type = type;
         }
     }
+
     public RulePopulator(){
         RuleSet[TileType.S_Line] = new List<Rule>{
             new Rule(Direction.South, TileType.NW_Corner),
             new Rule(Direction.South, TileType.NE_Corner),
             new Rule(Direction.South, TileType.N_Line),
+            new Rule(Direction.South, TileType.Void),
 
             new Rule(Direction.East, TileType.SE_Corner),
             new Rule(Direction.East, TileType.NE_Diagonal),
@@ -96,6 +99,7 @@ public class RulePopulator
             new Rule(Direction.North, TileType.S_Line),
             new Rule(Direction.North, TileType.SE_Corner),
             new Rule(Direction.North, TileType.SW_Corner),
+            new Rule(Direction.North, TileType.Void),
 
             new Rule(Direction.South, TileType.S_Line),
             new Rule(Direction.South, TileType.BaseTile),
@@ -110,7 +114,7 @@ public class RulePopulator
 
             new Rule(Direction.North, TileType.NE_Corner),
             new Rule(Direction.North, TileType.E_Line),
-            new Rule(Direction.North, TileType.NE_Diagonal),
+            new Rule(Direction.North, TileType.NW_Diagonal),
 
             new Rule(Direction.South, TileType.SW_Diagonal),
             new Rule(Direction.South, TileType.E_Line),
@@ -119,6 +123,7 @@ public class RulePopulator
             new Rule(Direction.East, TileType.W_Line),
             new Rule(Direction.East, TileType.NW_Corner),
             new Rule(Direction.East, TileType.SW_Corner),
+            new Rule(Direction.East, TileType.Void),
         };
         RuleSet[TileType.W_Line] = new List<Rule>{
             new Rule(Direction.North, TileType.NW_Corner),
@@ -129,10 +134,11 @@ public class RulePopulator
             new Rule(Direction.West, TileType.NE_Corner),
             new Rule(Direction.West, TileType.SE_Corner),
 
-            new Rule(Direction.East, TileType.SW_Corner),
+            new Rule(Direction.East, TileType.NW_Diagonal),
             new Rule(Direction.East, TileType.SW_Diagonal),
             new Rule(Direction.East, TileType.BaseTile),
             new Rule(Direction.East, TileType.E_Line),
+            new Rule(Direction.East, TileType.Void),
 
             new Rule(Direction.South, TileType.W_Line),
             new Rule(Direction.South, TileType.SW_Corner),
@@ -160,9 +166,10 @@ public class RulePopulator
             new Rule(Direction.South, TileType.S_Line),
         };
         RuleSet[TileType.NW_Corner] = new List<Rule>{
-            new Rule(Direction.North, TileType.SW_Corner),
             new Rule(Direction.North, TileType.SE_Corner),
             new Rule(Direction.North, TileType.S_Line),
+            new Rule(Direction.North, TileType.NE_Corner),
+            new Rule(Direction.North, TileType.Void),
             
             new Rule(Direction.East, TileType.N_Line),
             new Rule(Direction.East, TileType.NE_Corner),
@@ -175,21 +182,24 @@ public class RulePopulator
             new Rule(Direction.West, TileType.NE_Corner),
             new Rule(Direction.West, TileType.SE_Corner),
             new Rule(Direction.West, TileType.E_Line),
+            new Rule(Direction.West, TileType.Void),
         };
         RuleSet[TileType.SE_Corner] = new List<Rule>{
             new Rule(Direction.South, TileType.NW_Corner),
             new Rule(Direction.South, TileType.N_Line),
             new Rule(Direction.South, TileType.NE_Corner),
+            new Rule(Direction.South, TileType.Void),
 
             new Rule(Direction.East, TileType.NW_Corner),
             new Rule(Direction.East, TileType.W_Line),
             new Rule(Direction.East, TileType.SW_Corner),
+            new Rule(Direction.East, TileType.Void),
 
             new Rule(Direction.West, TileType.S_Line),
             new Rule(Direction.West, TileType.SW_Corner),
             new Rule(Direction.West, TileType.NW_Diagonal),
 
-            new Rule(Direction.North, TileType.W_Line),
+            new Rule(Direction.North, TileType.E_Line),
             new Rule(Direction.North, TileType.NE_Corner),
             new Rule(Direction.North, TileType.NW_Diagonal),
             
@@ -198,14 +208,16 @@ public class RulePopulator
             new Rule(Direction.North, TileType.S_Line),
             new Rule(Direction.North, TileType.SE_Corner),
             new Rule(Direction.North, TileType.SW_Corner),
+            new Rule(Direction.North, TileType.Void),
 
             new Rule(Direction.West, TileType.NW_Corner),
             new Rule(Direction.West, TileType.N_Line),
             new Rule(Direction.West, TileType.SW_Diagonal),
 
+            new Rule(Direction.East, TileType.SW_Corner),
             new Rule(Direction.East, TileType.NW_Corner),
-            new Rule(Direction.East, TileType.E_Line),
-            new Rule(Direction.East, TileType.SW_Diagonal),
+            new Rule(Direction.East, TileType.W_Line),
+            new Rule(Direction.East, TileType.Void),
 
             new Rule(Direction.South, TileType.E_Line),
             new Rule(Direction.South, TileType.SE_Corner),
@@ -215,6 +227,7 @@ public class RulePopulator
             new Rule(Direction.South, TileType.NW_Corner),
             new Rule(Direction.South, TileType.N_Line),
             new Rule(Direction.South, TileType.NE_Corner),
+            new Rule(Direction.South, TileType.Void),
 
             new Rule(Direction.East, TileType.S_Line),
             new Rule(Direction.East, TileType.SE_Corner),
@@ -224,14 +237,16 @@ public class RulePopulator
             new Rule(Direction.North, TileType.NW_Corner),
             new Rule(Direction.North, TileType.NE_Diagonal),
 
+            new Rule(Direction.West, TileType.NE_Corner),
             new Rule(Direction.West, TileType.SE_Corner),
-            new Rule(Direction.West, TileType.W_Line),
-            new Rule(Direction.West, TileType.SE_Diagonal),
+            new Rule(Direction.West, TileType.E_Line),
+            new Rule(Direction.West, TileType.Void),
         }; 
         RuleSet[TileType.SE_Diagonal] = new List<Rule>{
             new Rule(Direction.North, TileType.NW_Corner),
             new Rule(Direction.North, TileType.NE_Diagonal),
             new Rule(Direction.North, TileType.W_Line),
+            new Rule(Direction.North, TileType.Void),
 
             new Rule(Direction.South, TileType.S_Line),
             new Rule(Direction.South, TileType.NE_Diagonal),
@@ -241,11 +256,13 @@ public class RulePopulator
             new Rule(Direction.West, TileType.NW_Corner),
             new Rule(Direction.West, TileType.N_Line),
             new Rule(Direction.West, TileType.SW_Diagonal),
+            new Rule(Direction.West, TileType.Void),
 
-            new Rule(Direction.East, TileType.SW_Corner),
-            new Rule(Direction.East, TileType.SE_Diagonal),
+            new Rule(Direction.East, TileType.SW_Diagonal),
+            new Rule(Direction.East, TileType.NW_Diagonal),
             new Rule(Direction.East, TileType.BaseTile),
             new Rule(Direction.East, TileType.E_Line),
+            new Rule(Direction.East, TileType.Void),
         };
         RuleSet[TileType.NE_Diagonal] = new List<Rule>{
             new Rule(Direction.North, TileType.BaseTile),
@@ -256,20 +273,24 @@ public class RulePopulator
             new Rule(Direction.South, TileType.SW_Corner),
             new Rule(Direction.South, TileType.W_Line),
             new Rule(Direction.South, TileType.SE_Diagonal),
+            new Rule(Direction.South, TileType.Void),
 
             new Rule(Direction.West, TileType.S_Line),
             new Rule(Direction.West, TileType.SW_Corner),
             new Rule(Direction.West, TileType.NW_Diagonal),
+            new Rule(Direction.West, TileType.Void),
 
             new Rule(Direction.East, TileType.BaseTile),
             new Rule(Direction.East, TileType.E_Line),
             new Rule(Direction.East, TileType.SW_Diagonal),
             new Rule(Direction.East, TileType.NW_Diagonal),
+            new Rule(Direction.East, TileType.Void),
         };
         RuleSet[TileType.SW_Diagonal] = new List<Rule>{
             new Rule(Direction.North, TileType.NE_Corner),
             new Rule(Direction.North, TileType.E_Line),
             new Rule(Direction.North, TileType.NW_Diagonal),
+            new Rule(Direction.North, TileType.Void),
 
             new Rule(Direction.East, TileType.N_Line),
             new Rule(Direction.East, TileType.NE_Corner),
@@ -294,6 +315,7 @@ public class RulePopulator
             new Rule(Direction.South, TileType.SE_Corner),
             new Rule(Direction.South, TileType.SW_Diagonal),
             new Rule(Direction.South, TileType.E_Line),
+            new Rule(Direction.South, TileType.Void),
 
             new Rule(Direction.West, TileType.NE_Diagonal),
             new Rule(Direction.West, TileType.BaseTile),
@@ -303,6 +325,35 @@ public class RulePopulator
             new Rule(Direction.East, TileType.S_Line),
             new Rule(Direction.East, TileType.SE_Corner),
             new Rule(Direction.East, TileType.NE_Diagonal),
+        };
+        RuleSet[TileType.Void] = new List<Rule>{
+            new Rule(Direction.North, TileType.Void),
+            new Rule(Direction.North, TileType.S_Line),
+            new Rule(Direction.North, TileType.SE_Corner),
+            new Rule(Direction.North, TileType.SW_Corner),
+            new Rule(Direction.North, TileType.NW_Diagonal),
+            new Rule(Direction.North, TileType.NE_Diagonal),
+
+            new Rule(Direction.South, TileType.Void),
+            new Rule(Direction.South, TileType.N_Line),
+            new Rule(Direction.South, TileType.NE_Corner),
+            new Rule(Direction.South, TileType.NW_Corner),
+            new Rule(Direction.South, TileType.SW_Diagonal),
+            new Rule(Direction.South, TileType.SE_Diagonal),
+            
+            new Rule(Direction.East, TileType.Void),
+            new Rule(Direction.East, TileType.W_Line),
+            new Rule(Direction.East, TileType.NW_Corner),
+            new Rule(Direction.East, TileType.SW_Corner),
+            new Rule(Direction.East, TileType.NE_Diagonal),
+            new Rule(Direction.East, TileType.NW_Diagonal),
+            
+            new Rule(Direction.West, TileType.Void),
+            new Rule(Direction.West, TileType.E_Line),
+            new Rule(Direction.West, TileType.NE_Corner),
+            new Rule(Direction.West, TileType.SE_Corner),
+            new Rule(Direction.West, TileType.NE_Diagonal),
+            new Rule(Direction.West, TileType.SE_Diagonal),
         };
     }
 

@@ -333,6 +333,7 @@ public class TilesetParser : EditorWindow
                 Debug.Log("An error has occurred while setting the rules of the tiles!");
             }
         }
+        AssetDatabase.Refresh();
     }
 
     public void GenerateTiles(SpriteRect[] spriteRects)
@@ -354,7 +355,6 @@ public class TilesetParser : EditorWindow
             if (tile == null)
             {
                 tile = CreateInstance<WFCNode>();
-
                 
                 if (Enum.TryParse<TileType>(rect.name, out TileType type)){
                     tile.type = type;
