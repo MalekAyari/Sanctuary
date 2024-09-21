@@ -13,22 +13,6 @@ public class Cell
     public void Collapse(){
         if (potentialNodes.Count == 0){
             Debug.Log("<color=red>No options left! Review rules or propagation!</color>");
-            
-            
-            
-            // Debug.Log("<color=grey> History:");
-            
-            // foreach (Vector2Int propagationSource in history.Keys){
-            //     Debug.Log($"Cell {propagationSource}, has rendered the list to:");
-            //     foreach (WFCNode node in history[propagationSource]){
-            //         string subStr = "";
-            //         foreach (WFCNode n in potentialNodes){
-            //             subStr += n.name + ", ";
-            //         }
-            //         subStr += ".";
-            //         Debug.Log(subStr);
-            //     }
-            // }
         }
 
         if (tile == null && potentialNodes.Count > 0){
